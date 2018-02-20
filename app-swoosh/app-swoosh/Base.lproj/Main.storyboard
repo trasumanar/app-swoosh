@@ -88,10 +88,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgimg" destination="bxH-1U-KPU" id="ndI-ij-yTA"/>
-                        <outlet property="swoosh" destination="CuC-jz-OKV" id="6OD-V4-Pdd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -176,7 +172,8 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mk1-Qk-y1j" kind="show" id="PjG-Sd-l2X"/>
+                                    <action selector="onNextTapped:" destination="hSx-IA-sge" eventType="touchUpInside" id="QVI-dI-pcN"/>
+                                    <segue destination="mk1-Qk-y1j" kind="show" identifier="skillVCSegue" id="PjG-Sd-l2X"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKO-vZ-g8W">
